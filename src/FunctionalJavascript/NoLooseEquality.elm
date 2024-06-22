@@ -7,9 +7,7 @@ module FunctionalJavascript.NoLooseEquality exposing (rule)
 -}
 
 import Dict exposing (Dict)
-import Elm.Syntax.Expression exposing (Expression)
-import Elm.Syntax.Node as Node exposing (Node)
-import Elm.Syntax.Range as Range exposing (Range)
+import Elm.Syntax.Range exposing (Range)
 import Review.FilePattern as FilePattern
 import Review.Rule as Rule exposing (Rule)
 
@@ -68,10 +66,6 @@ rule =
 
 
 type alias ProjectContext =
-    {}
-
-
-type alias ModuleContext =
     {}
 
 
@@ -142,31 +136,3 @@ findlooseEqualityOperatorsLineIndex content =
 initialProjectContext : ProjectContext
 initialProjectContext =
     {}
-
-
-fromProjectToModule : Rule.ContextCreator ProjectContext ModuleContext
-fromProjectToModule =
-    Rule.initContextCreator
-        (\projectContext ->
-            {}
-        )
-
-
-fromModuleToProject : Rule.ContextCreator ModuleContext ProjectContext
-fromModuleToProject =
-    Rule.initContextCreator
-        (\moduleContext ->
-            {}
-        )
-
-
-foldProjectContexts : ProjectContext -> ProjectContext -> ProjectContext
-foldProjectContexts new previous =
-    {}
-
-
-expressionVisitor : Node Expression -> ModuleContext -> ( List (Rule.Error {}), ModuleContext )
-expressionVisitor node context =
-    case Node.value node of
-        _ ->
-            ( [], context )

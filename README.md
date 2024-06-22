@@ -4,7 +4,7 @@ Provides [`elm-review`](https://package.elm-lang.org/packages/jfmengels/elm-revi
 
 ## Provided rules
 
-- [`FunctionalJavascript.NoLooseEquality`](https://package.elm-lang.org/packages/mateusfpleite/elm-review-functional-javascript/1.0.0/NoLooseEquality) - Reports uses of `==` and `!==` in javascript and typescript files.
+- [`FunctionalJavascript.NoLooseEquality`](https://package.elm-lang.org/packages/mateusfpleite/elm-review-functional-javascript/1.0.0/FunctionalJavascript-NoLooseEquality) - Reports uses of `==` and `!==` in javascript and typescript files.
 - [`FunctionalTypescript.NoUnionReturns`](https://package.elm-lang.org/packages/mateusfpleite/elm-review-functional-javascript/1.0.0/FunctionalTypescript-NoUnionReturns) - Reports functions that return union types.
 
 ## Configuration

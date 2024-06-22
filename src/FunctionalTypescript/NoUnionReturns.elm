@@ -7,8 +7,6 @@ module FunctionalTypescript.NoUnionReturns exposing (rule)
 -}
 
 import Dict exposing (Dict)
-import Elm.Syntax.Expression exposing (Expression)
-import Elm.Syntax.Node as Node exposing (Node)
 import Elm.Syntax.Range as Range exposing (Range)
 import List.Extra
 import Maybe.Extra
