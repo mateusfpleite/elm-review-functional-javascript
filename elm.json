@@ -3,7 +3,7 @@
     "name": "mateusfpleite/elm-review-functional-javascript",
     "summary": "enforce functional programming in typescript and javascript files",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "exposed-modules": [
         "FunctionalTypescript.NoUnionReturns",
         "FunctionalJavascript.NoLooseEquality"
