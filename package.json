@@ -1,5 +1,5 @@
 {
-  "name": "elm-review-functional-typescript",
+  "name": "elm-review-functional-javascript",
   "scripts": {
     "test": "npm-run-all --print-name --silent --sequential test:make test:format test:run test:review test:package",
     "test:make": "elm make --docs=docs.json",
